@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+.header{
+    width: 100vw;
+    height: 11vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-image: linear-gradient(to right bottom, #bdc3c7, #2c3e50);
+}
+
+.logoHeader{
+    width: 55px;
+    height: 55px;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+
+
+.navbar{
+    display: flex;
+    grid-column: 4/10;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* MAIN */
+
+.main{
+    height: 78vh;
+    background-image: url(../assets/cuadro.jpeg);
+    background-size: 100%;
+    background-position: center top;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.divMain{
+    grid-column: 9/11;
+    grid-row: 1/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-block: 50px;
+}
+
+.h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pDivMain{
+    font-size: larger;
+    font-weight: 900;
+    color: #fff;
+}
+
+.boton{
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px #fff;
+    border-style: groove;
+    background-color: transparent;
+    cursor: pointer;
+    align-self: start;
+    padding: auto;
+    color: #fff;
+    padding: 10px 10px;
+    transition-property: width background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    }
+
+.boton:hover{
+    width: 100%;
+    background-color: #3c4a59;
+    translate: -10px;
+    }
+
+/* FOOTER */
+
+.divFooter{
+    width: 100vw;
+    height: 11vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    /* background-color: rgb(125, 129, 123); */
+    background-image: linear-gradient(to left top, #bdc3c7, #2b3846);
+}
+
+.pFooter{
+    color: #fff;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pFooterSeguime{
+    color: #fff;
+    grid-column: 6/8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
