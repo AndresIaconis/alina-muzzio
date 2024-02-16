@@ -325,3 +325,10 @@ body{
 /* xxl */
 @media (min-width:1401px) {}
 
+
+/* PÁGINA CONTACTO */
+
+.main-contacto{
+    height: 78vh;
+}
+
