@@ -1,36 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exposiciones</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class="header">
-        <img class="logoHeader" src="/assets/logo.png" alt="">
-        <nav class="navbar">
-            <li><a href="/pages/sobreMi.html">Sobre mí</a></li>
-            <li><a href="/pages/expo.html">Exposiciones</a></li>
-            <li><a href="/pages/shop.html">Shop</a></li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exposiciones</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/58fcbaa432.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <!-- Styles -->
+        <link rel="stylesheet" href="../sass/styles.css">
+    </head>
+    <body class="body-expo">
+        <header class="header">
+            <img class="logoHeader" src="/assets/logo.png" alt="">
+            <nav class="navbar">
+                <li><a href="/pages/sobreMi.html">Sobre mí</a></li>
+                <li><a href="/pages/expo.html">Exposiciones</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+                <li><a href="/pages/shop.html">Shop</a></li>
+                <i class="logo-menu fa-solid fa-bars"></i>    
+            </nav>
+        </header>
 
-    <main>
+
+    
+    <main class="main-expo">
+
+
+        <h1 class="h1expo">Exposiciones</h1>
         
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="card col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                    <img src="../assets/museo6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Museo del Mar, 1983</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/louvre.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Louvre, 1987</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/museo2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Museo del Prado, 1992 </h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/met.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MET. NY, 1998</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/museobsas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buenos Aires, 2001 </h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4 card-moma">
+                    <img src="../assets/museo4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MoMA, 2002</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+<!-- 
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/museo5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Palacio San José, 2007</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/museo7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Museo Británico, 2010</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="../assets/museo8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Museo del Bicentenario, 2024</h5>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="item col-4">
+                    <p>MET</p>
+                    <img src="../assets/met.jpg" alt="">
+                </div>
+
+                <div class="item col-4">
+                    <p>Louvre</p>
+                    <img src="../assets/louvre.jpg" alt="">
+                </div>
+
+                <div class="item col-4">
+                    <p>Museo Latinoamericano</p>
+                    <img src="../assets/museo2.jpg" alt="">
+                </div>
+
+                <div class="item col-4">
+                    <p>Museo de Bs. As.</p>
+                    <img src="../assets/museo3.jpg" alt="">
+                </div>
+
+                <div class="item col-4">
+                    <p>Museo del Prado</p>
+                    <img src="../assets/museo4.jpg" alt="">
+                </div>
+
+                <div class="item col-4">
+                    <p>British Museum</p>
+                    <img src="../assets/museo5.jpeg" alt="">
+                </div> -->
+
+            </div>
+
+        </div>
     </main>
 
 
-    <footer>
+    <footer">
         <div class="divFooter">
-            <p class="pFooter">Copyrigth 2023</p>
-            <p class="pFooterSeguime">Seguime en mis redes sociales</p>
-        </div>
+            <div class="pFooter">
+                <p>Copyrigth 2023</p>
+            </div>
+            <div class="redes-sociales-footer">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+        </div>        
     </footer>
 </body>
 </html>
