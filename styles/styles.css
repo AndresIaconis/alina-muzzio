@@ -417,7 +417,7 @@ body {
   margin: auto;
 }
 
-.body-shop {
+.main-shop {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -426,5 +426,12 @@ body {
   background-position: bottom bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
