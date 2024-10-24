@@ -19,7 +19,7 @@
 // const producto11= new Productos ({nombre: 'Religión', precio: 800.000, stock: 90});
 // const producto12 = new Productos ({nombre: 'Líneas', precio: 300.200, stock: 90});
 
-
+const productosEnElCarrito = []
 const productos = [
     {id: 1, nombre: 'Catarsis', precio: 780.000, stock: 90},
     {id: 2, nombre: 'Soleado', precio: 250.000, stock: 90},
@@ -37,20 +37,35 @@ const productos = [
 
 let acumulador = ``; 
 
-for(let i = 0; i < productos.length; i++){
-    acumulador += `<div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <h5 class="card-title" style="color: red">${productos[i].nombre}</h5>
-                        <p class="card-text">$${productos[i].precio}</p>
-                        <a href="#" onclick class="btn btn-primary">Comprar</a>
+productos.forEach((producto) => {
+    acumulador += `<div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">${producto.nombre}</h5>
+                                    <!-- Product price-->
+                                    $${producto.precio}
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a onclick="agregarAlCarrito(${producto.id})" class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
                         </div>
                     </div>`
+});
+
+document.getElementById("cards-container").innerHTML = acumulador;
+
+function agregarAlCarrito(idDeProducto){
+    const indiceEncontrado = productos.findIndex(producto => producto.id == idDeProducto);
+    productosEnElCarrito.push(productos[indiceEncontrado]);
+    console.log('Tenes ' + productosEnElCarrito.length + ' en el carrito');
+    console.log(productosEnElCarrito);
 };
-document.write(acumulador)
 
-function agregarAlCarrito(productos){
-    console.log("Agregaste un producto al carrito");
-}
-
-agregarAlCarrito();
+// console.log(productos.length)
